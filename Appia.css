@@ -1,0 +1,470 @@
+    *{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+
+body{
+width: 100%; 
+height: 450vh;
+min-height: 100vh;
+background-image: url(nw.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+font-family: 'Segoe UI', Tahoma, Times new Roman, Geneva, Verdana, sans-serif;
+}
+
+
+nav{
+background-color:  #71b7e6;
+box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+width: 100%;
+list -style: none;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+nav li{
+height: 50px;
+}
+nav a{
+height: 100%;
+padding: 0 30px;
+text-decoration: none;
+display: flex;
+align-items: center;
+color: black;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+nav a: hover{
+background-color: #fofofo;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+position: fixed;
+top: 0;
+right: 0;
+height: 100vh;
+width: 250px;
+z-index: 999;
+background-color:  #71b7e6;
+backdrop-filter: blur (20px);
+box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+display: none;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+}
+
+.sidebar li{
+width: 100%;
+}
+.sidebar a{
+width: 100%;
+}
+.menu-button {
+    display: none;
+}
+@media (max-width: 800px){
+.hideOnMobile{
+display: none;
+}
+.menu-button {
+    display: block;
+    }
+}
+@media (max-width: 400px){
+.sidebar{
+width: 100%;
+}
+}
+
+@media screen and (max-width: 768px) {
+.maxm{
+    position: relative;
+}
+
+.maxm img{
+width: 90%;
+height: 40vh;
+margin-top: 20px;
+margin-left: 5%;
+border-radius: 10px;
+}
+
+.maxm-text{
+position: absolute;
+top: 10%;
+left: 20%;
+color: white;
+font-family: sans-serif;
+text-align: center;
+font-size: 90%;
+padding: 10px;
+}
+
+.cn{
+width: 100px;
+height: 40px;
+background: #ff7200;
+border: none;
+margin-top: 10px;
+font-size: 18px;
+border-radius: 10px;
+cursor: pointer;
+color: #fff:
+transition: 0.4s ease;
+font-weight: bold;
+}
+
+.cn a {
+text-decoration: none;
+color: white;
+transition: .4s ease;
+}
+
+.cn: hover {
+background-color: white;
+}
+}
+
+@media screen and (max-width: 768px) {
+.about-details {
+width: 90%;
+height: 90vh;
+background: transparent;
+position: relative;
+top: 10px;
+left: 5%;
+border-radius: 10px;
+padding: 5px;
+border: 2px solid #71b7e6;
+}
+
+.about{
+    position: relative;
+}
+
+.about img{
+width: 80%;
+height: 80%;
+margin-top: 10px;
+margin-left: 10%;
+border-radius: 10px;
+}
+
+.about-text{
+position: relative;
+text-align: center;
+color: black;
+font-size: 16px;
+padding: 10px;
+}
+
+.about h1 {
+    font size: 15px;
+    color: red;
+    text-align: center;
+}
+}
+@media screen and (max-width: 768px) {
+.booking {
+width: 90%;
+height: 210vh;
+background: transparent;
+position: relative;
+top: 40px;
+left: 5%;
+border-radius: 10px;
+padding: 5px;
+border: 2px solid #71b7e6;
+}
+
+.booking h1{
+    font-size: 25px;
+    font-style: Times new Roman;
+    color: red;
+    text-align: center;
+}
+
+.business{
+    position: relative;
+}
+
+.business img{
+width: 90%;
+height: 50%;
+margin-top: 20px;
+margin-left: 5%;
+border-radius: 10px;
+}
+
+.business-text{
+position: absolute;
+top: 70%;
+left: 10%;
+color: white;
+font-size: 90%;
+padding: 10px;
+}
+
+.bttonb {
+position: absolute;
+width: 35px;
+height: 35px;
+background: transparent;
+border: 5px solid white;
+margin-left: -20%;
+margin-top: 35%;
+font-size: 18px;
+border-radius: 100px;
+}
+
+.bttonb a {
+text-decoration: none;
+color: white;
+transition: .4s ease;
+}
+
+.private{
+    position: relative;
+}
+
+.private img{
+width: 90%;
+height: 60%;
+margin-top: 20px;
+margin-left: 5%;
+border-radius: 10px;
+}
+
+
+.bttonpm{
+position: absolute;
+width: 35px;
+height: 35px;
+background: transparent;
+border: 5px solid white;
+margin-left: 90%;
+margin-top: 5%;
+font-size: 18px;
+border-radius: 100px;
+}
+.bttonp {
+position: absolute;
+width: 35px;
+height: 35px;
+background: transparent;
+border: 5px solid white;
+margin-left: -20%;
+margin-top: 60%;
+font-size: 18px;
+border-radius: 100px;
+}
+
+.bttonp a {
+text-decoration: none;
+color: white;
+transition: .4s ease;
+}
+
+.permit{
+    position: relative;
+}
+
+.permit img{
+width: 90%;
+height: 80%;
+margin-top: 20px;
+margin-left: 5%;
+border-radius: 10px;
+
+}
+
+
+.permit-text{
+position: absolute;
+top: 30%;
+left: 20%;
+color: white;
+font-size: 15px;
+padding: 10px;
+}
+
+.bttonpm{
+position: absolute;
+width: 35px;
+height: 35px;
+background: transparent;
+border: 5px solid white;
+margin-left: 90%;
+margin-top: 5%;
+font-size: 18px;
+border-radius: 100px;
+}
+
+.bttonpm a {
+text-decoration: none;
+color: white;
+transition: .4s ease;
+}
+
+.meet{
+    position: relative;
+}
+
+.meet img{
+width: 90%;
+height: 80%;
+margin-top: 20px;
+margin-left: 5%;
+border-radius: 10px;
+}
+
+.meet-text{
+position: absolute;
+top: 70%;
+left: 10%;
+color: white;
+font-size: 90%;
+padding: 10px;
+}
+
+.bttonmg{
+position: absolute;
+width: 35px;
+height: 35px;
+background: transparent;
+border: 5px solid white;
+margin-left: 190px;
+margin-top: -50px;
+font-size: 18px;
+border-radius: 100px;
+}
+
+.bttonmg a {
+text-decoration: none;
+color: white;
+transition: .4s ease;
+}
+
+.appearance{
+    position: relative;
+}
+
+.appearance img{
+width: 90%;
+height: 80%;
+margin-top: 20px;
+margin-left: 5%;
+border-radius: 10px;
+}
+
+.appearance-text{
+position: absolute;
+top: 30%;
+left: 20%;
+color: white;
+font-size: 15px;
+padding: 10px;
+text-align: center;
+font-weight: bold;
+}
+
+.bttonpp{
+position: absolute;
+width: 35px;
+height: 35px;
+background: transparent;
+border: 5px solid white;
+margin-left: 47%;
+margin-top: -40%;
+font-size: 18px;
+border-radius: 100px;
+}
+
+.bttonpp a {
+text-decoration: none;
+color: white;
+transition: .4s ease;
+}
+}
+
+@media screen and (max-width: 768px) {
+.donation {
+width: 90%;
+height: 70vh;
+background: transparent;
+position: relative;
+top: 50px;
+left: 5%;
+border: 2px solid #71b7e6;
+border-radius:  10px;
+}
+
+.donation h1{
+    font size: 30px;
+    color: red;
+    text-align: center;
+}
+
+.donation img{
+width: 90%;
+height: 80%;
+margin-top: 20px;
+margin-left: 5%;
+border-radius: 10px;
+}
+
+.donation-text {
+position: relative;
+text-align: center;
+color: white;
+font-size: 16px;
+padding: 10px;
+font-style: Arial;
+}
+
+
+.cnn{
+width: 100px;
+height: 40px;
+background: #ff7200;
+border: none;
+margin-top: 10px;
+font-size: 18px;
+border-radius: 10px;
+cursor: pointer;
+color: #fff:
+transition: 0.4s ease;
+font-weight: bold;
+margin-left: 35%;
+}
+
+.cnn a {
+text-decoration: none;
+color: white;
+transition: .4s ease;
+}
+
+.cnn: hover {
+background-color: white;
+}
+}
